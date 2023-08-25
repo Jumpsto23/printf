@@ -1,19 +1,12 @@
 #include "main.h"
 
 /**
- * convertToDecimal - Convert base 8 and 16 to base 10
+ * convertToDecimal - Converts bass to decimal
+ * @decimal: Variable to convert
  *
- * Return: Decimal
+ * Return: On success (Decimal)
  */
-long long convertToDecimal(int Number, int base)
+
+int converToDecimal(const char decimal)
 {
-	int decimalNumber = 0, i = 0;
-	while(Number != 0)
-	{
-	decimalNumber += (Number%10) * power(base,i);
-	++i;
-	Number/=10;
-	}
-	i = 1;
-	return decimalNumber;
-}
+
